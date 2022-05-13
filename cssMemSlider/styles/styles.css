@@ -19,22 +19,29 @@
     align-items: center;
     justify-content: center;
 }
-
-.slider{
+.background-block{
     position: absolute;
     top: 50%;  
     left: 50%; 
     transform: translate(-50%, -50%); 
+    display: flex;
+    width:600px;
+    height: 400px;
+    background-color:cadetblue;
+    box-shadow: 0 0 10px #000000;
+    overflow-x: hidden;
+
+}
+
+.slider{
     width:600px;
     height: 300px;
-    border-radius:10px;
     overflow: hidden;
-    box-shadow: 0 0 10px #000000;
 }
 
 .slider-items{
     width:500%;
-    height: 500px;
+    height: 400px;
     display: flex;
 }
 
@@ -57,16 +64,21 @@
     color: aliceblue;
     bottom: 20px;
     width: 100%;
-    text-align: center;
-    z-index: 50;
+    text-align: left;
+    z-index: 10;
     font-size: 20px;
 }
 .nav_click{
     position: absolute;
-    width: 700px;
-    margin-top: -90px;
-    justify-content: center;
+    width: 400px;
+    right: 0;
+    margin-top: -75px;
+    justify-content: flex-end;
     display: flex;
+    padding-right: 10px;
+    z-index: 20;
+    padding: 10px 0;
+    background-color: cadetblue;
 }
 
 .btn_click{
