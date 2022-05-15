@@ -1,0 +1,134 @@
+* {
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+  }
+  
+  html{
+      scroll-behavior: smooth; 
+  }
+  
+  body{
+      background-color: aqua;
+  }
+
+  .container-block{
+    margin:0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+.background-block{
+    position: static;
+    margin:20vh 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:42%;
+    height: 55vh;
+    background-color:cadetblue;
+    box-shadow: 0 0 1rem #000000;
+    overflow-x: hidden;
+
+}
+
+.slider{
+    width:82%;
+    overflow: hidden;
+}
+
+.slider-items{
+    width:500%;
+    height: 100%;
+    display: flex;
+}
+
+.slider-items input{
+    display: none;
+}
+.item{
+    width:20%;
+    transition: 2s;
+    background-color: cadetblue;
+}
+
+.item img{
+    width: 100%;
+    height: auto;
+}
+
+.item h4{
+    color: aliceblue;
+    width: 100%;
+    text-align: left;
+    font-size: 1.3rem;
+}
+.nav_click{
+    margin-top: -2.8vw;
+    display: flex;
+    justify-content: flex-end;
+    background-color: cadetblue;
+}
+
+.btn_click{
+    border:0.3vh solid burlywood;
+    padding: 0.5vh;
+    border-radius: 0.8vh;
+    width: 2.1vw;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn_click:not(:last-child){
+    margin-right: 0.8rem;
+}
+.btn_click:hover{
+    background-color: brown;
+}
+
+#radio_1:checked ~.first{
+    margin-left: 0;
+}
+
+#radio_2:checked ~.first{
+    margin-left: -20%;
+}
+#radio_3:checked ~.first{
+    margin-left: -40%;
+}
+#radio_4:checked ~.first{
+    margin-left: -60%;
+}
+#radio_5:checked ~.first{
+    margin-left: -80%;
+}
+
+
+
+@media (max-width:426px) {
+    .slider{
+        position: relative;
+    }
+    .background-block{
+        height:35vh;
+    }
+    .nav_click{
+    position: absolute;
+    width: 100%;
+    margin-top: -23vw;
+    justify-content: center;
+    }
+    .btn_click{
+        width: 3vh;
+        padding: 0.5vh;
+    }
+}
+
+@media (max-width:376px) {
+    
+    .nav_click{
+        margin-top: -15vh;
+    }
+    
+}
