@@ -23,16 +23,18 @@
     position: static;
     margin:20vh 2vh;
     display: flex;
-    width:600px;
-    height: 400px;
+    justify-content: center;
+    align-items: center;
+    width:42%;
+    height: 55vh;
     background-color:cadetblue;
-    box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 1rem #000000;
     overflow-x: hidden;
 
 }
 
 .slider{
-    width:100%;
+    width:82%;
     overflow: hidden;
 }
 
@@ -63,23 +65,23 @@
     font-size: 1.3rem;
 }
 .nav_click{
-    margin-top: -8.5vh;
-    justify-content: flex-end;
+    margin-top: -2.8vw;
     display: flex;
+    justify-content: flex-end;
     background-color: cadetblue;
 }
 
 .btn_click{
     border:0.3vh solid burlywood;
-    padding: 0.6vh;
+    padding: 0.5vh;
     border-radius: 0.8vh;
-    width: 30px;
+    width: 2.1vw;
     cursor: pointer;
     transition: 1s;
 }
 
 .btn_click:not(:last-child){
-    margin-right: 10px;
+    margin-right: 0.8rem;
 }
 .btn_click:hover{
     background-color: brown;
@@ -102,24 +104,31 @@
     margin-left: -80%;
 }
 
+
+
 @media (max-width:426px) {
+    .slider{
+        position: relative;
+    }
     .background-block{
-        height:260px;
+        height:35vh;
     }
     .nav_click{
-        justify-content: center;
+    position: absolute;
+    width: 100%;
+    margin-top: -23vw;
+    justify-content: center;
+    }
+    .btn_click{
+        width: 3vh;
+        padding: 0.5vh;
     }
 }
 
 @media (max-width:376px) {
     
     .nav_click{
-        margin-top: -13.5vh;
+        margin-top: -15vh;
     }
-}
-@media (max-width:321px) {
     
-    .nav_click{
-        margin-top: -18.5vh;
-    }
 }
